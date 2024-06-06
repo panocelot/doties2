@@ -1,0 +1,23 @@
+#!/bin/bash
+
+p=$(pidof gammastep mpd pipewire waybar) #xdg-desktop-portal xdg-desktop-portal-hyprland)
+kill $p
+
+#XDG_CURRENT_DESKTOP=sway
+pipewire &
+mpd &
+swaybg -i /home/kita/pix/wallpapers/$(echo "$(</home/kita/.config/sway/currentwallpaper)") -m fill &
+wal -i "/home/kita/pix/wallpapers/$(echo "$(</home/kita/.config/sway/currentwallpaper)")" &
+exec gammastep -l 52:13 -t 6500:2900 &
+#cd /usr/local/searxng-docker && docker compose up -d &
+
+#sleep 1s
+#killall -e xdg-desktop-portal-hyprland
+#killall -e xdg-desktop-portal-wlr
+#killall xdg-desktop-portal
+#/usr/lib/xdg-desktop-portal-hyprland &
+#sleep 2s
+#/usr/lib/xdg-desktop-portal &
+
+sleep 1s
+waybar &

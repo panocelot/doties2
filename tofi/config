@@ -1,0 +1,15 @@
+anchor = top
+width = 100%
+height = 26
+horizontal = true
+font-size = 7
+background-color = #000000
+#selection-color = #115566
+selection-color = #f27cdd
+selection-background = #333333
+num-results = 15
+result-spacing = 25
+prompt-text = ""
+outline-width = 0
+border-width = 0
+font = spleen
